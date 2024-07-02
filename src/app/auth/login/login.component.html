@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="progress-bar mb-3" *ngIf="busy">
+        <div class="progress-bar-value"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 mt-5">
+        <div class="card p-5 shadow p-3 mb-5 bg-body rounded">
+          <div class="card-body text-center">
+            <h4 class="card-title lead mb-4">Login to Errands App</h4>
+            <p class="card-text mb-4">
+              Akwaaba, login with your Google account to continue.
+            </p>
+            <div>
+            <p class="align-self-center bg-light">
+              <asl-google-signin-button type='standard' size='large' text="continue_with" shape="rectangular"
+                logo_alignment="left" class="mb-5"></asl-google-signin-button>
+            </p>
+          </div>
+          <div class="footer text-center mt-3">
+            <a routerLink="/">About</a> | <a routerLink="/t/privacy">Privacy</a> | <a routerLink="/t/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
