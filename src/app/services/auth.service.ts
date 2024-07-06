@@ -1,9 +1,12 @@
 // auth.service.ts
 import { Injectable } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
+
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
 import { throwError } from 'rxjs';
-import { environment } from '../../environments/environment.development';
+
 
 @Injectable({
   providedIn: 'root',

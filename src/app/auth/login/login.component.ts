@@ -24,11 +24,12 @@ export class LoginComponent {
   password!: string;
   username!: string;
 
-  constructor(private socialAuth: SocialAuthService, private auth: AuthService, private http: HttpClient, private route: Router,) { }
+  constructor(private socialAuth: SocialAuthService, private authService: AuthService, private http: HttpClient, private route: Router,) { }
 
+ 
   ngOnInit(){this.socialAuth.authState.subscribe((res: any) => {
     console.log(res)
-    this.auth.socialLogin(res.idToken)
+    this.authService.socialLogin(res.idToken)
       .subscribe({
         next: (loginRes: any) => {
           console.log('User payload from Google: ', loginRes)
@@ -42,3 +43,5 @@ export class LoginComponent {
   }
   
 }
+
+
