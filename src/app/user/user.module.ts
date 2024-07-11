@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashRoutingModule } from './dash-routing.module';
+import { UserRoutingModule } from './user-routing.module';
 
 
 @NgModule({
   declarations: [
+  
   ],
   imports: [
     CommonModule,
-    DashRoutingModule,
-    
-    
+    UserRoutingModule,
+  
   ]
 })
-export class DashModule { }
+export class UserModule { }

@@ -7,6 +7,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { authGuard } from './auth/auth.guard';
 import { GoogleLoginProvider, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { environment } from '../environments/environment.development';
+import { HomeComponent } from './public/home/home.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,5 +32,5 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideAnimations(),
     provideHttpClient(withFetch()),
-    authGuard]
+    authGuard, provideAnimationsAsync()]
 };
