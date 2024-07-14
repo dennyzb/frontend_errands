@@ -13,7 +13,7 @@
                   <h4 class="card-title lead mb-4 text-primary"></h4>
                   <img src="/assets/images/courier.jpeg" class="rounded-circle" alt="runner" width="200" height="200" > 
                     <p>create a unique profile</p>
-                    <button class="btn btn-success"> As Runner</button>
+                    <button class="btn btn-success" (click)="openDialog()"> As Runner</button>
                 </div>
               </div>
             </div>
@@ -26,21 +26,21 @@
                    <p>
                     looking for quality candidates?
                    </p>
-                    <button class="btn btn-success"> As Sender</button>
+                    <button class="btn btn-success" href='/registration/registration.component.html' (click)="openDialog()"> As Sender</button>
                  </div>
                </div>
             </div>
     
           </div>
           <div class="col-sm-4 col-md-6 mt-1"> 
-            <div class="card p-5 shadow p-3 mb-5 bg-body rounded border border-success">
+            <div class="card p-5 shadow p-3 mb-5 ml-40 bg-body rounded border border-success">
               <div class="card-body text-center">
                 <h4 class="card-title lead mb-4 text-primary"></h4>
                 <img src="/assets/images/Artisan" class="rounded-circle" alt="Artisan"width="200" height="200" >
                <p>
                 Unleashing creativity through artisanal magic
               </p>
-                <button class="btn btn-success"> As Artisan</button>
+                <button class="btn btn-success"(click)="openDialog()"> As Artisan</button>
              </div>
            </div>
         </div>

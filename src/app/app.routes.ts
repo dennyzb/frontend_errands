@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './public/about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faEdit);
 
 export const routes: Routes = [
   { path: 'public', loadChildren: () => import('../app/public/public.module').then(m => m.PublicModule) },
@@ -21,7 +26,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), FontAwesomeModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

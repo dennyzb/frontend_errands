@@ -1,51 +1,109 @@
-<p>sender-index works!</p>
-<div class="container mt-5 text-success">
-   <div class="float-left">
-    <img src="/assets/images/Sender.jpg" class="rounded-circle" alt="Sender" width="100" height="100" >
-   </div>
-   <p class="Text-align-left">Welcome Philip Oppong</p>
-    <div>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Sender Dashboard</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
+
+
+<div class="container mt-5   text-dark">
+
+
+    <div class= "container mt-5  border-light text-dark">
+      <div class="row">
+          <div class="col-sm-900 col-md-900 mt-900">
+            <div class="card p-5 shadow p-5 mb-5 bg-success bg-rounded border ">
+              <div>
+                <nav class="navbar bg-body-success">
+                    <div class="container-fluid">
+                      <a class="navbar-brand text-light" href="/">DASHBOARD</a>
+                      <button class="navbar-toggler-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">close</button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
               </div>
-            </div>
-          </nav>
+              
+              <div class="card-body text-center"> 
+                <div class="profile-box float-right">
+                  <img class="float-right"  src="/assets/images/Sender.jpg" class="profile-pic rounded-circle " alt="Profile Photo"   height="100" >photo</div>
+                  <button aria-label="Edit profile">
+                    <fa-icon [icon]="['fas', 'edit']"></fa-icon>
+                  </button>
+                <h3 class=" float-left card-title lead mb-4 text-light">welcome, Philip Oppong</h3>
+      
+          
+      </div>
     </div>
-    
+   </div>
+</div>
+
+<div>
+  <h4>Add Request</h4>
+</div>
+<hr>
+
+<div class="container mt-5 text-success ">
+      <div class="row">
+        <div class="col-sm-5 col-md-6 mt-5">
+          <div class="card p-5 shadow p-5 mb-5 ml-5 bg-body rounded border border-success">
+            <div class="card-body text-center"> 
+              <h4 class="card-title lead mb-4 text-primary"></h4>
+              <img src="/assets/images/courier.jpeg" class="rounded-circle" alt="runner" width="200" height="200" > 
+                <P>Post request for a runner to pick up</P>
+                <button class="btn btn-success pd-10">Add Request</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-5 col-md-6 mt-5 " > 
+            <div class="card p-5 shadow p-5 mb-5 ml-5 bg-body rounded border border-success">
+              <div class="card-body text-center">
+                <h4 class="card-title lead mb-4 text-primary"></h4>
+                <img src="/assets/images/Sender.jpg" class="rounded-circle" alt="Artisan" width="200" height="200" >
+               <p>
+                looking for a quality candidates for your art?
+               </p>
+                <button class="btn btn-success" href='/registration/registration.component.html'>Add Request</button>
+             </div>
+           </div>
+        </div>
+   </div>
+</div>   
+<div>
+  <hr>
+  <h4> Request Posted </h4>
+</div>
+<div class= "container mt-5 text-light">
+  <div class="row">
+      <div class="col-sm-900 col-md-600 mt-100">
+        <div class="card p-5 shadow p-5 mb-5 bg-body rounded border border-success">
+          <div class="card-body text-center"> 
+            <h4 class="card-title lead mb-4 text-normal">Cancil Request</h4>
+  
+      
+  </div>
 </div>
